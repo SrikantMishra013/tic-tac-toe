@@ -24,20 +24,19 @@ const TicTacToe = () => {
     }
     const winner = calculateWinner(squares);
     let status;
-    if(winner)
-    {
-        
-        status ="Winner: "+winner;
+    if (winner) {
+
+        status = "Winner : " + winner;
     }
-    else{
-        status = "Next player: " + (xIsNext ? "X" : "O");
+    else {
+        status = "Next player : " + (xIsNext ? "X" : "O");
     }
-    
+
     function handleReset() {
         setSquares(Array(9).fill(null));
         setXIsNext(true);
     }
-    
+
 
 
     return (
